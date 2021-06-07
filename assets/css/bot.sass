@@ -1,0 +1,99 @@
+.page-bot
+	.table-wrap
+		width: 100%
+		margin: 0 10px
+		.table-head
+			color: $text-white
+			text-transform: uppercase
+			font-family: $text
+			font-weight: 400
+			font-size: 16px
+			padding: 10px
+			box-shadow: 0 3px 6px rgba(0,0,0,.1)
+			background: #1b1e2e
+			border-radius: 3px 3px 0 0
+			display: block
+			width: 100%
+		.table-footer
+			padding: 10px
+			box-shadow: 0 3px 6px rgba(0,0,0,.1)
+			background: #1b1e2e
+			border-radius: 3px 3px 0 0
+			display: block
+			width: 100%
+			button
+				background: $border-white
+				outline-width: thin !important
+				box-shadow: none !important
+				border: none !important
+				color: $white
+				cursor: pointer
+				font-size: 14px
+				font-family: $text
+				padding: 5px 10px
+				&:hover
+					background: rgba(78,91,133,.4)
+		.table-body
+			background: $bg-dark
+			border-radius: 3px
+			padding-top: 10px
+			.notification
+				font-family: $text
+				font-size: 14px
+				color: $text-white
+				margin-bottom: 0
+				padding: 10px
+			.table
+				thead
+					tr
+						th
+							border-bottom: solid 1px $border-white
+							border-top: solid 1px $border-white
+							border-left: solid 1px $border-white
+							color: $text-white
+							font-family: $text
+							font-size: 14px
+							font-weight: bold
+							cursor: pointer
+							padding: 10px
+							&:hover
+								color: $link
+							&:first-of-type
+								border-left: 0
+				tbody
+					tr
+						th, td
+							border-bottom: solid 1px $border-white
+							border-top: solid 1px $border-white
+							border-left: solid 1px $border-white
+							color: $text-white
+							font-family: $text
+							font-size: 14px
+							cursor: pointer
+							padding: 10px
+							input
+								height: 40px
+								font-size: 16px
+								border: 1px solid #4e5b85!important
+								background: #1e2235
+								color: #c7cce6
+								padding: 0 10px
+								width: 100%
+								outline-width: thin !important
+								box-shadow: none !important
+								font-family: $text
+								font-size: 14px
+								&::placeholder
+									color: $text-dark
+									font-family: $text
+									font-size: 14px
+						th
+							border-left: 0
+
+
+@media only screen and (max-width: 920px)
+	.page-bot 
+		.table-wrap
+			margin: 0
+			.table-body
+				overflow-y: auto

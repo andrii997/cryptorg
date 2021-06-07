@@ -1,0 +1,220 @@
+@import "app/assets/css/common-multiuse.sass"
+@import "app/assets/css/cabinet.sass"
+@import "app/assets/css/user.sass"
+@import "app/assets/css/bot.sass"
+@import "app/assets/css/deal.sass"
+@import "app/assets/css/analitics.sass"
+@import "app/assets/css/bot-action.sass"
+@import "app/assets/css/access.sass"
+@import "app/assets/css/graph.sass"
+@import "app/assets/css/quotation.sass"
+@import "app/assets/css/stats.sass"
+@import "app/assets/css/documentation.sass"
+@import "app/assets/css/landing.sass"
+@import "app/assets/css/access-create.sass"
+@import "app/assets/css/sign-in.sass"
+
+body
+	background: $bg-white
+	width: 100%
+	header
+		border-bottom: solid 1px $border-white
+		height: 49px
+		display: flex
+		align-items: center
+		padding: 0 10px
+		background: none
+		z-index: 101
+		position: relative
+		width: 100%
+		.logo
+			display: block
+			img
+				height: 30px
+				width: auto
+		.right-side
+			margin-left: auto
+			display: flex
+			align-items: center
+			.dropdown
+				margin-right: 10px
+				.dropdown-toggle
+					cursor: pointer
+					background: none
+					border: solid $text-white 1px
+					border-radius: 5px
+					display: flex
+					align-items: center
+					color: $text-white
+					font-family: $text
+					font-size: 14px
+					padding: 0 5px
+					img
+						height: auto
+						width: 16px
+						margin-right: 3px
+					&:hover
+						border: solid 1px $link
+						color: $link
+				.dropdown-menu
+					background: rgba(0,0,0,.75)
+					left: -100px
+					top: 10px
+					.dropdown-item
+						display: flex
+						align-items: center
+						color: $text-white
+						font-family: $text
+						font-size: 14px
+						cursor: pointer
+						background: none
+						img
+							height: auto
+							width: 16px
+							margin-right: 3px
+						&:hover
+							color: $link
+			.btn-menu
+				cursor: pointer
+				border: solid $text-white 1px
+				border-radius: 5px
+				@include justify-content-center
+				height: 23px
+				width: 23px
+				svg
+					fill: $text-white
+					height: 13px
+					width: auto
+				&:hover
+					border: solid 1px $link
+					svg
+						fill: $link
+
+.page-wrap
+	width: 100%
+	display: flex
+	nav
+		background: rgba(0,0,0,.43)
+		height: auto
+		padding-top: 49px
+		margin-top: -49px
+		width: 220px
+		&.hide
+			display: none
+		ul 
+			list-style: none
+			li 
+				a, button
+					text-decoration: none !important
+					display: flex
+					align-items: center
+					color: $text-white
+					padding: 10px
+					font-size: 14px
+					font-family: $text
+					font-weight: 400
+					width: 100%
+					outline: none!important
+					box-shadow: none!important
+					border: none!important
+					background: none !important
+					cursor: pointer
+					figure
+						height: 15px
+						width: 15px
+						@include justify-content-center
+						margin: 0 10px 0 0
+						svg
+							height: 100%
+							width: auto
+							fill: $text-white
+					&:hover, &.active
+						color: $link
+						figure svg
+							fill: $link
+				&.hello a
+					border-bottom: solid 1px $border-white
+				.dropdown
+					.dropdown-toggle:after
+						border: none
+						content: url("data:image/svg+xml; utf8, <svg fill='#c7cce6' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 31.059 31.059'><path d='M15.529 31.059C6.966 31.059 0 24.092 0 15.529 0 6.966 6.966 0 15.529 0c8.563 0 15.529 6.966 15.529 15.529.001 8.563-6.966 15.53-15.529 15.53zm0-29.285c-7.585 0-13.755 6.171-13.755 13.755s6.17 13.754 13.755 13.754c7.584 0 13.754-6.17 13.754-13.754S23.113 1.774 15.529 1.774z'/><path d='M21.652 16.416H9.406a.887.887 0 1 1 0-1.775h12.246a.888.888 0 0 1 0 1.775z'/><path d='M15.529 22.539a.888.888 0 0 1-.888-.887V9.406a.889.889 0 0 1 1.775 0v12.246a.886.886 0 0 1-.887.887z'/></svg>")
+						height: 13px
+						width: 13px
+						margin-left: 10px
+					.dropdown-toggle:hover
+						&:after
+							content: url("data:image/svg+xml; utf8, <svg fill='#7a98f7' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 31.059 31.059'><path d='M15.529 31.059C6.966 31.059 0 24.092 0 15.529 0 6.966 6.966 0 15.529 0c8.563 0 15.529 6.966 15.529 15.529.001 8.563-6.966 15.53-15.529 15.53zm0-29.285c-7.585 0-13.755 6.171-13.755 13.755s6.17 13.754 13.755 13.754c7.584 0 13.754-6.17 13.754-13.754S23.113 1.774 15.529 1.774z'/><path d='M21.652 16.416H9.406a.887.887 0 1 1 0-1.775h12.246a.888.888 0 0 1 0 1.775z'/><path d='M15.529 22.539a.888.888 0 0 1-.888-.887V9.406a.889.889 0 0 1 1.775 0v12.246a.886.886 0 0 1-.887.887z'/></svg>")
+					.dropdown-menu
+						background: rgba(0,0,0,.75)
+						//left: -100px
+						//top: 10px
+						.dropdown-item
+							display: flex
+							align-items: center
+							color: $text-white
+							font-family: $text
+							font-size: 14px
+							cursor: pointer
+							background: none
+							img
+								height: auto
+								width: 16px
+								margin-right: 3px
+							&:hover
+								color: $link
+	main
+		width: 100%
+		.navigation-items
+			padding: 10px
+			a
+				text-decoration: none !important
+				color: $text-white
+				font-size: 14px
+				&:hover
+					color: $link
+			span
+				color: $text-white
+				font-size: 14px
+				&.active
+					color: $link
+		.content
+			min-height: calc(100vh - 49px - 49px - 44px)
+
+footer
+	background: rgba(0,0,0,.43)
+	height: 49px
+	width: 100%
+	padding: 10px
+	border-top: solid 1px $border-white
+	display: flex
+	align-items: center
+	justify-content: space-between
+	a 
+		color: $text-white
+		font-size: 14px
+		text-decoration: none !important
+		&:hover
+			color: $link
+
+.height-fix
+	min-height: calc(100vh - 49px - 49px - 44px)
+
+@media only screen and (max-width: 920px)
+	.page-wrap
+		nav
+			display: none
+			position: fixed
+			top: 0
+			bottom: 0
+			left: 0
+			width: 160px
+			margin: 0
+			z-index: 100
+			background: rgba(0,0,0,0.95)
+			&.hide
+				display: block
+		main 
+			.content
+				display: block
+				.padding-fix
+					padding: 0 !important

@@ -1,0 +1,40 @@
+.page-documentation
+	.page-wrap main .content
+		min-height: 0
+	.card
+		width: 100%
+		margin: 0 10px 10px
+		h5
+			color: $text-white
+			font-family: $text
+			font-size: 20px
+		hr
+			border-top: solid 1px $border-white
+		img
+			max-width: 100%
+			height: auto
+			margin: 10px 0
+		&.navs
+			.card-body
+				display: flex
+				flex-wrap: wrap
+				a 
+					background: $border-white
+					outline-width: thin !important
+					box-shadow: none !important
+					border: none !important
+					color: $white
+					cursor: pointer
+					font-size: 14px
+					font-family: $text
+					padding: 5px 10px
+					text-decoration: none !important
+					margin: 0 10px 10px 0
+					&:hover, &.active
+						background: rgba(78,91,133,.4)
+						color: $white
+
+@media only screen and (max-width: 992px)
+	.page-documentation
+		.card
+			margin: 0 0 10px

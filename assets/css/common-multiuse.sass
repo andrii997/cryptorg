@@ -1,0 +1,71 @@
+@import "app/libs/normalize-css/normalize"
+@import "app/libs/bootstrap/css/bootstrap.min"
+
+/* main-style start */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans')
+
+$text: 'Noto Sans', sans-serif
+
+
+$black: #000
+$gray: #cccccc
+$white: #ffffff
+$bg-dark: #181b2a
+$bg-white: #22263A
+$text-white: #c7cce6
+$text-dark: #61688a
+$btn-white: #4e5b85
+$border-white: #4e5b85
+$link: #7a98f7
+$green: #589065
+$red: #ae4e54
+
+@mixin box-shadow
+	box-shadow: 0 0 5px rgba(0,0,0,0.5)
+
+*
+	margin: 0
+	padding: 0
+	font-family: $text
+
+button, input, textarea, select
+	&:active, &:focus, &:hover, &.form-control, &.navbar-toggler
+		outline: none!important 
+
+html, body
+	width: 100%
+
+@mixin flex-column
+	display: flex 
+	align-items: center 
+	flex-direction: column
+
+@mixin align-items-center
+	display: flex 
+	align-items: center
+
+@mixin justify-content-center
+	display: flex 
+	align-items: center
+	justify-content: center
+
+@mixin justify-content-between
+	display: flex 
+	align-items: center
+	justify-content: space-between
+
+@mixin justify-content-around
+	display: flex 
+	align-items: center
+	justify-content: space-around
+
+@mixin flex-wrap
+	display: flex 
+	align-items: center
+	justify-content: space-between
+	flex-wrap: wrap
+
+@media only screen and (max-width: 992px)
+	.navbar-toggler
+		outline: none!important

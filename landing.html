@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>pumpa</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<meta name="theme-color" content="#fff">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body class="page-landing">
+		
+	<header class="parallax-window" data-parallax="scroll" data-image-src="assets/img/bg-main.jpg">
+		<div class="shadow"></div>
+		<nav class="navbar navbar-expand-lg">
+		  <a class="navbar-brand" href="/">
+		  <img src="assets/img/logo.png">
+		</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 3c0-.6-.4-1-1-1H1c-.6 0-1 .4-1 1v2c0 .6.4 1 1 1h22c.6 0 1-.4 1-1V3zM24 11c0-.6-.4-1-1-1H1c-.6 0-1 .4-1 1v2c0 .6.4 1 1 1h22c.6 0 1-.4 1-1v-2zM24 19c0-.6-.4-1-1-1H1c-.6 0-1 .4-1 1v2c0 .6.4 1 1 1h22c.6 0 1-.4 1-1v-2z"/></svg>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+		    <ul class="navbar-nav">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">OTC</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Обмен</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Маржа</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Hadax</a>
+		      </li>
+		    </ul>
+		    <div class="right-side">
+		    	<p><a href="#">Войти</a></p>
+		    	<p><a href="#">Регистрация</a></p>
+		    	<div class="dropdown">
+				  <button class="dropdown-toggle" type="button" id="dropdownLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    <img src="assets/img/flag-ru.png"> RU
+				  </button>
+				  <div class="dropdown-menu" aria-labelledby="dropdownLang">
+				    <a class="dropdown-item" href="#"><img src="assets/img/flag-usa.png">English</a>
+				    <a class="dropdown-item" href="#"><img src="assets/img/flag-ru.png">Русский язык</a>
+				  </div>
+				</div>
+		    </div>
+		  </div>
+		</nav>
+
+		<div class="head-info">
+			<h1>Глобальный Эко Фонд Pumpa</h1>
+			<h4>Pumpa Global Ecosyste Fund</h4>
+			<h2>Ищем Глобальных Эко-Партнеров</h2>
+		</div>
+
+	</header>
+
+	<div class="news-line">
+		<a href="#">Награды для трейтинга GXS, Всего 18 880GXS!</a>
+		<span>/</span>
+		<a href="#">Huobi Global добавит BIX Token 24 июля, в 14:30 (GMT +8)</a>
+		<span>/</span>
+		<a href="#">Huobi Global добавит GXChain 23 Июль, в 16:00 (GMT +8)</a>
+	</div>
+
+	<section id="main-index">
+		<div class="graph-wrap">
+			<canvas id="chart-landing" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; height: 0px;"></canvas>
+			<div class="graph-info">
+				<h5>Основной Индекс Pumpa</h5>
+				<p class="values">
+					<span>869.72</span>
+					<span>+32.85</span>
+					<span>+3.91%</span>
+				</p>
+				<p class="stats">
+					<span>Выс. 883.80</span>
+					<span>Низ. 815.39</span>
+					<span>Рост 9</span>
+					<span>Падение 1</span>
+				</p>
+			</div>
+		</div>
+	</section>
+	<section id="table-coin">
+		<div class="table-wrap">
+			<div class="table-head">
+				<div class="tab active">
+					<img src="assets/img/usdt.svg">
+					USDT
+				</div>
+				<div class="tab">
+					<img src="assets/img/btc.svg">
+					BTC
+				</div>
+				<div class="tab">
+					<img src="assets/img/eth.svg">
+					ETH
+				</div>
+				<div class="tab">
+					<img src="assets/img/HT.svg">
+					HT
+				</div>
+				<input type="text" placeholder="Поиск...">
+			</div>
+			<div class="table-body">
+				<table class="table no-border">
+					<thead>
+				    <tr>
+				      <th>
+				      	Пара
+				      </th>
+				      <th>
+				      	Послед.
+				      </th>
+				      <th>
+				      	Изм.
+				      </th>
+				      <th>
+				      	Hight
+				      </th>
+				      <th>
+				      	Low
+				      </th>
+				      <th>
+				      	24H Объём
+				      </th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td>
+				      	BTC <span>/ USDT</span>
+				      </td>
+				      <td>
+				      	8183.42 <span>≈₽518370.5</span>
+				      </td>
+				      <td class="green">
+				      	+0.07%
+				      </td>
+				      <td>
+				      	8202.02 <span>≈₽519548.7</span>
+				      </td>
+				      <td>
+				      	8158.58 <span>≈₽516797.0</span>
+				      </td>
+				      <td>
+				      	28138
+				      </td>
+				    </tr>
+				    <tr>
+				      <td>
+				      	BTC <span>/ USDT</span>
+				      </td>
+				      <td>
+				      	8183.42 <span>≈₽518370.5</span>
+				      </td>
+				      <td class="red">
+				      	+0.07%
+				      </td>
+				      <td>
+				      	8202.02 <span>≈₽519548.7</span>
+				      </td>
+				      <td>
+				      	8158.58 <span>≈₽516797.0</span>
+				      </td>
+				      <td>
+				      	28138
+				      </td>
+				    </tr>
+				    <tr>
+				      <td>
+				      	BTC <span>/ USDT</span>
+				      </td>
+				      <td>
+				      	8183.42 <span>≈₽518370.5</span>
+				      </td>
+				      <td class="green">
+				      	+0.07%
+				      </td>
+				      <td>
+				      	8202.02 <span>≈₽519548.7</span>
+				      </td>
+				      <td>
+				      	8158.58 <span>≈₽516797.0</span>
+				      </td>
+				      <td>
+				      	28138
+				      </td>
+				    </tr>
+				    <tr>
+				      <td>
+				      	BTC <span>/ USDT</span>
+				      </td>
+				      <td>
+				      	8183.42 <span>≈₽518370.5</span>
+				      </td>
+				      <td class="green">
+				      	+0.07%
+				      </td>
+				      <td>
+				      	8202.02 <span>≈₽519548.7</span>
+				      </td>
+				      <td>
+				      	8158.58 <span>≈₽516797.0</span>
+				      </td>
+				      <td>
+				      	28138
+				      </td>
+				    </tr>
+				  </tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+	<section class="text-section">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-12 col-md-6">
+					<h2>Глобальная система цифровых активов</h2>
+					<p>Постоянно расширяющаяся глобальная платформа;
+					<br>Локальные представительства службы поддержки во многих странах и регионах;
+					<br>Миллионы обслуживаемых пользователей в более чем 130 странах.</p>
+				</div>
+				<div class="col-12 col-md-6">
+					<img src="assets/img/text-section1.png">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="text-section">
+		<div class="container">
+			<div class="row align-items-center flex-md-row-reverse">
+				<div class="col-12 col-md-6">
+					<h2>SMART-Chain модель оценки активов</h2>
+					<p>Независимая профессиональная система оценки блокчейн-активов;
+					<br>Наиболее авторитетный и беспристрастный анализ, основанный на долгосрочном мониторинге отрасли;
+					<br>Комплексная система, включающая в себя программу мониторинга и открытый доступ к информации.</p>
+				</div>
+				<div class="col-12 col-md-6">
+					<img src="assets/img/text-section2.png">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="text-section">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-12 col-md-6">
+					<h2>Безопасно, стабильно, надёжно</h2>
+					<p>Более чем 4-летний опыт в области контроля рисков и безопасности цифровых активов;
+					<br>Миллионы пользователей по всему миру с общим объёмом контролируемых активов, превышающим 1 млрд долларов;
+					<br>Специализированная распределенная система защиты от DDoS-атак;
+					<br>98% активов хранится в 'холодных' кошельках с мульти-подписью.</p>
+				</div>
+				<div class="col-12 col-md-6">
+					<img src="assets/img/text-section3.png">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="location">
+		<div class="locations-line">
+			<p>Hong Kong</p>
+			<span>/</span>
+			<p>Seoul</p>
+			<span>/</span>
+			<p>Singapore</p>
+			<span>/</span>
+			<p>Tokyo</p>
+		</div>
+		<div class="row align-items-center justify-content-center">
+			<div class="line"></div>
+			<p class="text">Сервисные центры по всему миру</p>
+			<div class="line"></div>
+		</div>
+	</section>
+	<section id="platform">
+		<div class="container">
+			<h2>Мультиплатформенный доступ</h2>
+			<p>Полный комплекс обслуживания доступен в платформах iOS, Android, Windows и Mac</p>
+			<div class="row pt-3">
+				<div class="col-6 col-md-3">
+					<img src="assets/img/platform1.png">
+					<div class="row justify-content-center">
+						<a href="#" class="btn">App Store</a>
+					</div>
+				</div>
+				<div class="col-6 col-md-3">
+					<img src="assets/img/platform2.png">
+					<div class="row justify-content-center">
+						<a href="#" class="btn">Android</a>
+					</div>
+				</div>
+				<div class="col-6 col-md-3">
+					<img src="assets/img/platform3.png">
+					<div class="row justify-content-center">
+						<a href="#" class="btn">Windows</a>
+					</div>
+				</div>
+				<div class="col-6 col-md-3">
+					<img src="assets/img/platform4.png">
+					<div class="row justify-content-center">
+						<a href="#" class="btn">Mac</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="trade-now">
+		<div class="container">
+			<h2>Торговать Сейчас</h2>
+			<p>На ведущей мировой бирже цифровыз активов</p>
+			<div class="row justify-content-center">
+				<div class="col-12 col-md-4 col-lg-3">
+					<div class="row justify-content-center m-0">
+						<button>Войти</button>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 col-lg-3">
+					<div class="row justify-content-center m-0">
+						<button class="reg">Регистрация</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-3">
+					<img src="assets/img/logo.png">
+					<p>Ведущая мировая биржа цифровых активов</p>
+					<p>&copy; 2013-2018 Pumpa Global</p>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3">
+					<h5>Инструменты</h5>
+					<ul>
+						<li><a href="#">Загрузка приложения</a></li>
+						<li><a href="#">Помощь</a></li>
+						<li><a href="#">API Doc</a></li>
+						<li><a href="#">Цифровые активы</a></li>
+					</ul>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3">
+					<h5>О нас</h5>
+					<ul>
+						<li><a href="#">About Huobi</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Вакансии</a></li>
+						<li><a href="#">Заявление о поддержке валюты</a></li>
+						<li><a href="#">Объявления</a></li>
+					</ul>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3">
+					<h5>Условия использования</h5>
+					<ul>
+						<li><a href="#">Пользовательское соглашение</a></li>
+						<li><a href="#">Положения о конфиденциальности</a></li>
+						<li><a href="#">Юридическое заявление</a></li>
+						<li><a href="#">Комиссия</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+<script src="assets/js/libs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+<script>
+		var ctx = document.getElementById("chart-landing").getContext('2d');
+		var myChart = new Chart(ctx, {
+		    type: 'line',
+		    data: {
+		        labels: ["14.06", "17.06", "20.06", "26.06", "29.06", "02.07"],
+		        datasets: [{
+		            data: [7, 12, 3, 5, 2, 3],
+		            borderColor: [
+		                'rgba(255,255,255,1)',
+		                'rgba(255,255,255,1)',
+		                'rgba(255,255,255,1)',
+		                'rgba(255,255,255,1)',
+		                'rgba(255,255,255,1)',
+		                'rgba(255,255,255,1)'
+		            ],
+		            borderWidth: 1
+		        }]
+		    },
+		    options: {
+		        scales: {
+		            yAxes: [{
+		                ticks: {
+		                    beginAtZero:true
+		                }
+		            }]
+		        },
+		        legend: {
+		            display: false
+		        },
+		        tooltips: {
+		            callbacks: {
+		               label: function(tooltipItem) {
+		                      return tooltipItem.yLabel;
+		               }
+		            }
+		        },
+		    }
+		});
+</script>
+<script src="assets/js/main.js"></script>
+</html>

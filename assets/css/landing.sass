@@ -1,0 +1,456 @@
+.page-landing
+	header
+		min-height: 80vh
+		display: block
+		padding: 0
+		.shadow
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			background: rgba(97,104,138,.15)
+		.navbar
+			position: relative
+			z-index: 1
+			background: rgba(0,0,0,.43)
+			.navbar-brand img
+				height: 30px
+				width: auto
+			.nav-item
+				.nav-link
+					color: $text-white
+					text-decoration: none !important
+					font-size: 15px
+					text-transform: uppercase
+					&:hover
+						color: $link
+			.right-side
+				p 
+					margin-bottom: 0
+					padding: .5rem
+					a 
+						color: $text-white
+						text-decoration: none !important
+						font-size: 15px
+						text-transform: uppercase
+						&:hover
+							color: $link
+				.dropdown
+					padding: .5rem
+		.head-info
+			position: relative
+			z-index: 1
+			min-height: calc(80vh - 58px)
+			@include justify-content-center
+			flex-direction: column
+			h1
+				font-family: $text
+				color: #C4EAFA
+				font-weight: normal
+				font-size: 30px
+				text-align: center
+			h4
+				color: #627688
+				font-family: $text
+				font-weight: lighter
+				font-size: 20px
+				text-align: center
+			h2
+				color: #54A6D6
+				font-family: $text
+				font-weight: bold
+				font-size: 60px
+				text-align: center
+				margin-top: 3rem
+	.news-line
+		background: #181b2a
+		padding: 15px 0
+		@include justify-content-center
+		flex-wrap: wrap
+		a 
+			text-decoration: none !important
+			color: $text-white
+			font-size: 14px
+			font-family: $text
+			&:hover
+				color: $link
+		span
+			font-size: 14px
+			font-family: $text
+			color: $text-white
+			padding: 0 15px
+	#main-index
+		padding: 30px 60px	
+		.graph-wrap
+			border: solid 1px #4e5b85
+			background: #202437
+			width: 100%
+			height: 250px
+			position: relative
+			.graph-info
+				position: absolute
+				top: 0
+				bottom: 0
+				left: 0
+				right: 0
+				padding: 30px 60px
+				h5
+					color: $text-white
+					font-size: 20px
+					font-family: $text
+				.values
+					margin-bottom: 60px
+					span
+						color: $green
+						white: 
+						font-family: $text
+						font-size: 20px
+						padding-left: 30px
+						&.red
+							color: $red
+						&:first-of-type
+							font-size: 40px
+							color: $text-white
+							padding-left: 0
+				.stats
+					span
+						color: $text-white
+						font-size: 14px
+						font-family: $text
+						padding-left: 20px
+						&:first-of-type
+							padding-left: 0
+	#table-coin
+		padding: 30px 60px		
+		.table-wrap
+			width: 100%
+			border: solid 1px #4e5b85
+			.table-head
+				color: $text-white
+				text-transform: uppercase
+				font-family: $text
+				font-weight: 400
+				font-size: 16px
+				padding: 10px
+				box-shadow: 0 3px 6px rgba(0,0,0,.1)
+				background: #1b1e2e
+				border-radius: 3px 3px 0 0
+				display: block
+				width: 100%
+				display: flex
+				align-items: center
+				.tab
+					@include justify-content-center
+					width: 100px
+					opacity: .5
+					cursor: pointer
+					img
+						height: 15px
+						width: 15px
+						margin-right: 5px
+					&.active
+						opacity: 1
+				input
+					margin-left: auto
+					font-size: 16px
+					border: 1px solid #4e5b85!important
+					background: #1e2235
+					color: #c7cce6
+					padding: 0 10px
+					width: 180px
+					display: block
+					outline-width: thin !important
+					box-shadow: none !important
+					font-family: $text
+					font-size: 14px
+					border-radius: 0
+					&::placeholder
+						color: $text-dark
+						font-family: $text
+						font-size: 14px
+			.table-footer
+				padding: 10px
+				box-shadow: 0 3px 6px rgba(0,0,0,.1)
+				background: #1b1e2e
+				border-radius: 3px 3px 0 0
+				display: block
+				width: 100%
+				button
+					background: $border-white
+					outline-width: thin !important
+					box-shadow: none !important
+					border: none !important
+					color: $white
+					cursor: pointer
+					font-size: 14px
+					font-family: $text
+					padding: 5px 10px
+					&:hover
+						background: rgba(78,91,133,.4)
+			.table-body
+				background: $bg-dark
+				border-radius: 3px
+				padding-top: 10px
+				.notification
+					font-family: $text
+					font-size: 14px
+					color: $text-white
+					margin-bottom: 0
+					padding: 10px
+				.table
+					thead
+						tr
+							th
+								border-bottom: solid 1px $border-white
+								border-top: solid 1px $border-white
+								border-left: solid 1px $border-white
+								color: $text-white
+								font-family: $text
+								font-size: 14px
+								font-weight: bold
+								cursor: pointer
+								padding: 10px
+								&:hover
+									color: $link
+								&:first-of-type
+									border-left: 0
+					tbody
+						tr
+							th, td
+								border-bottom: solid 1px $border-white
+								border-top: solid 1px $border-white
+								border-left: solid 1px $border-white
+								color: $text-white
+								font-family: $text
+								font-size: 14px
+								cursor: pointer
+								padding: 10px
+								&.red
+									color: $red
+								&.green
+									color: $green
+								span
+									color: $text-dark
+							td:first-of-type
+								border-left: 0
+					&.no-border
+						thead, tbody
+							tr
+								border-bottom: $border-white solid 1px
+								th, td
+									border: none
+								&:last-of-type
+									border-bottom: none
+	.text-section
+		padding: 30px 0
+		h2
+			font-family: $text
+			color: $text-white
+			font-weight: normal
+		p 
+			font-family: $text
+			color: $text-white
+			font-weight: lighter
+		img
+			width: 80%
+			height: auto
+			display: block
+			margin: 0 auto
+	#location
+		background: url("../img/location.png") no-repeat center / cover
+		padding: 30px 0 200px
+		.locations-line
+			padding: 15px 0
+			@include justify-content-center
+			flex-wrap: wrap
+			p 
+				text-decoration: none !important
+				color: $text-white
+				font-size: 28px
+				font-family: $text
+				margin-bottom: 0
+			span
+				font-size: 28px
+				font-family: $text
+				color: $text-white
+				padding: 0 15px
+		.text
+			text-align: center
+			font-family: $text
+			font-size: 14px
+			color: $text-white
+			position: relative
+			margin-bottom: 0
+		.line
+			width: 200px
+			display: block
+			height: 1px
+			background: $border-white
+			margin: 0 20px
+	
+	#platform
+		background: url("../img/bg-platforms.png") no-repeat center / cover
+		padding: 150px 0
+		h2
+			font-family: $text
+			color: $text-white
+			font-weight: normal
+			text-align: center
+		p 
+			font-family: $text
+			color: $text-white
+			font-weight: lighter
+			text-align: center
+		img
+			display: block
+			margin: 0 auto
+		a
+			cursor: pointer
+			border: solid $text-white 1px!important
+			border-radius: 10px
+			@include justify-content-center
+			height: 25px
+			width: 130px
+			color: $text-white
+			box-shadow: none !important
+			outline: none !important
+			text-decoration: none !important
+			margin-top: 1rem
+			&:hover
+				color: $text-white
+				text-decoration: none
+	#trade-now
+		padding: 100px 0
+		background: #202437
+		h2
+			margin-bottom: 2rem
+			font-family: $text
+			color: $text-white
+			font-weight: normal
+			text-align: center
+		p 
+			margin-bottom: 2rem
+			font-family: $text
+			color: $text-white
+			font-weight: lighter
+			text-align: center
+		button
+			cursor: pointer
+			border: solid $text-white 1px!important
+			border-radius: 10px
+			@include justify-content-center
+			height: 50px
+			width: 200px
+			color: $text-white
+			background: none !important
+			box-shadow: none !important
+			outline: none !important
+			text-decoration: none !important
+			margin-top: 1rem
+			font-size: 17px
+			text-transform: uppercase
+			&:hover
+				color: $text-white
+				text-decoration: none
+			&.reg
+				border: solid 1px $btn-white!important
+				color: $white
+				background: $btn-white !important
+				&:hover
+					color: $white
+	footer
+		display: block
+		height: auto
+		padding: 10px 0
+		img
+			height: 30px
+			width: auto
+		p 
+			color: $text-dark
+			font-size: 13px
+			margin-bottom: 0
+		h5
+			font-family: $text
+			font-size: 12px
+			color: $text-dark
+		ul 
+			list-style: none
+
+@media only screen and (max-width: 992px)
+	.page-landing
+		header
+			.navbar
+				.navbar-toggler
+					outline: none!important
+					border: solid $text-white 1px
+					border-radius: 5px
+					@include justify-content-center
+					height: 23px
+					width: 23px
+					padding: 0
+					svg
+						fill: $text-white
+						height: 13px
+						width: auto
+				.right-side
+					p:first-of-type
+						padding-left: 0
+			.head-info
+				h2
+					font-size: 40px
+					margin-top: 1rem
+		.news-line
+			padding: 10px
+			flex-direction: column
+			a
+				margin-bottom: 1rem
+			span
+				display: none
+		#main-index
+			padding: 10px 0
+			.graph-wrap
+				height: 500px
+				.graph-info
+					padding: 10px
+					.values
+						display: flex
+						flex-direction: column
+						span
+							padding: 0
+					.stats
+						display: flex
+						flex-direction: column
+						span
+							padding: 0
+		#table-coin
+			padding: 10px 0
+			.table-wrap
+				margin: 0
+				.table-body, .table-head
+					overflow-y: auto
+		.text-section
+			padding: 10px 0
+		#location
+			padding: 10px 0 30px
+			.locations-line
+				flex-direction: column
+				p
+					margin-bottom: 1rem
+					font-size: 20px
+				span
+					display: none
+			.line
+				display: none
+		#platform
+			padding: 60px 0 10px
+			h2
+				font-size: 20px
+			a
+				margin-bottom: 50px
+		#trade-now
+			padding: 10px 0
+		footer
+			padding: 10px 0
+			h5
+				margin-top: 30px
